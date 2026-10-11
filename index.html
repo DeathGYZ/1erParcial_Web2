@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Carrito</title>
+    <title>Conferencias - UNAM</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
@@ -15,97 +14,142 @@
     <header id="header" class="header">
         <div class="container">
             <div class="row">
-                <div class="two columns u-pull-right">
-                    <ul>
-                        <li class="submenu">
-                            <img src="img/cart.png" id="img-carrito">
-                            <div id="carrito">
-                                <table id="lista-carrito" class="u-full-width">
-                                    <thead>
-                                        <tr>
-                                            <th>Imagen</th>
-                                            <th>Nombre</th>
-                                            <th>Precio</th>
-                                            <th>Cantidad</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="six columns">
+                    <img src="/img/fes_logo.jpg" alt="Logo UNAM" id="logo">
+                </div>
+                <div class="six columns u-pull-right">
+                    <div class="submenu">
+                        <img src="/img/cart.png" alt="Carrito" id="img-carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Conferencia</th>
+                                        <th>Precio</th>
+                                        <th>Detalles (Lugar/Hora)</th>
+                                        <th>Cantidad</th>
+                                        <th>Eliminar</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width button-primary">Vaciar
+                                Carrito</a>
+                            <a href="#" id="procesar-pago" class="button u-full-width button-success">Pagar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <div id="hero">
+    <div class="container-conferencias" id="lista-conferencias">
         <div class="container">
-            <div class="row">
-                <div class="six columns">
+            <h1 class="encabezado">Conferencias Disponibles</h1>
 
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="/img/conferencia_vj.jpg" alt="Conferencia 1" class="imagen-conferencia u-full-width">
+                        <div class="info-card">
+                            <h4>Los Videojuegos en la Ingeniería</h4>
+                            <p>Ponente: MTRO. José Francisco Salgado Rodriguez</p>
+                            <div class="detalles-posteriores">
+                                <p class="descripcion">Una exploración fascinante sobre cómo el desarrollo, 
+                                    la programación avanzada y la simulación interactiva propia de los videojuegos 
+                                    se aplican para resolver problemas complejos, optimizar procesos de diseño y 
+                                    potenciar la innovación en el campo de la ingeniería moderna.</p>
+                                <p class="lugar"><strong>Lugar:</strong> Auditorio DUACyD</p>
+                                <p class="hora"><strong>Hora:</strong> 12:30 PM - 1:30 PM</p>
+                            </div>
+                            <img src="/img/estrellas.png" alt="Estrellas" class="estrellas">
+                            <p class="precio">$750.00 <span class="u-pull-right">$500.00</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito"
+                                data-id="1">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="four columns">
+                    <div class="card">
+                        <img src="/img/conferencia_sbd.jpg" alt="Conferencia 2" class="imagen-conferencia u-full-width">
+                        <div class="info-card">
+                            <h4>Servidores y Base de datos en la Nube: AWS Cloud, AZURE, GCP</h4>
+                            <p>Ponente: Fernando Cisneros Reyes</p>
+                            <!-- Parte posterior de la conferencia: Descripción, lugar y hora -->
+                            <div class="detalles-posteriores">
+                                <p class="descripcion">Una visión integral y práctica sobre la arquitectura, gestión y 
+                                    despliegue de servidores y bases de datos en los entornos de nube líderes del mercado 
+                                    (Amazon Web Services, Microsoft Azure y Google Cloud Platform), enfocada en la escalabilidad, 
+                                    alta disponibilidad y seguridad de la información.</p>
+                                <p class="lugar"><strong>Lugar:</strong> Auditorio A1</p>
+                                <p class="hora"><strong>Hora:</strong> 01:00 PM - 2:30 PM</p>
+                            </div>
+                            <img src="/img/estrellas.png" alt="Estrellas" class="estrellas">
+                            <p class="precio">$500.00 <span class="u-pull-right">$300.00</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito"
+                                data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="four columns">
+                    <div class="card">
+                        <img src="/img/conferencia_hw.jpg" alt="Conferencia 3" class="imagen-conferencia u-full-width">
+                        <div class="info-card">
+                            <h4>Huawei - Construyendo la Infraestructura Digital para la era de la IA y el 5G</h4>
+                            <p>Ponente: Ing. Juan Josè Baños</p>
+                            <div class="detalles-posteriores">
+                                <p class="descripcion">Una perspectiva estratégica sobre el papel de Huawei en el despliegue de tecnologías críticas, 
+                                    explorando cómo su infraestructura avanzada impulsa la conectividad ultrarrápida del 5G y la potencia de 
+                                    procesamiento requerida para las aplicaciones de inteligencia artificial del futuro.</p>
+                                <p class="lugar"><strong>Lugar:</strong> Auditorio DUACyD</p>
+                                <p class="hora"><strong>Hora:</strong> 12:00 PM - 1:30 PM</p>
+                            </div>
+                            <img src="/img/estrellas.png" alt="Estrellas" class="estrellas">
+                            <p class="precio">$500.00 <span class="u-pull-right">$450.00</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito"
+                                data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="lista-libros" class="container">
-        <h1 id="encabezado" class="encabezado">Venta de Libros</h1>
-        <div class="row">
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/libro_1.jpg" width="50%" class="imagen-curso u-full-width">
-                    <div class="info-card">
-                        <h4>Java 1</h4>
-                        <p>Predro Torres</p>
-                        <img src="img/estrellas.png">
-                        <p class="precio">$100 <span class="u-pull-right ">$75</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
-                            Al Carrito</a>
-                    </div>
-                </div> <!--.card-->
+    <div id="modal-pago" class="modal" style="display:none;">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <h3>Selecciona tu Tipo de Tarjeta</h3>
+            <p id="modal-total-texto">Total a pagar: $0.00</p>
+            <div class="opciones-tarjetas">
+                <button class="button button-primary btn-tarjeta" data-banco="Banamex">Banamex</button>
+                <button class="button button-primary btn-tarjeta" data-banco="BBVA">BBVA</button>
+                <button class="button button-primary btn-tarjeta" data-banco="Bancoppel">Bancoppel</button>
             </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/libro_2.jpg" class="imagen-curso u-full-width">
-                    <div class="info-card">
-                        <h4>Java 2</h4>
-                        <p>Pedro Torres</p>
-                        <img src="img/estrellas.png">
-                        <p class="precio">$300 <span class="u-pull-right ">$215</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar
-                            Al Carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/libro_3.jpg" class="imagen-curso u-full-width">
-                    <div class="info-card">
-                        <h4>Java 3</h4>
-                        <p>Pedro Torres</p>
-                        <img src="img/estrellas.png">
-                        <p class="precio">$300 <span class="u-pull-right ">$215</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar
-                            Al Carrito</a>
-                    </div>
-                </div>
-            </div>
+        </div>
+    </div>
+
+    <div id="modal-confirmar" class="modal" style="display:none;">
+        <div class="modal-contenido">
+            <h3>Confirmar Compra</h3>
+            <p id="texto-confirmacion">¿Deseas confirmar el pago con la tarjeta seleccionada?</p>
+            <button id="btn-confirmar-compra" class="button button-primary"
+                style="background-color: #27ae60; border-color: #27ae60;">Confirmar y Finalizar</button>
         </div>
     </div>
 
     <footer id="footer" class="footer">
         <div class="container">
-            <div class="row">
-                <p>Marca Registrada</p>
+            <div class="row text-center">
+                    <p><strong>Equipo #5</strong></p>
+                    <p>Camargo Ramírez Julio / Capilla Hernández Sem Andre / González Galero Hector Antonio</p>
             </div>
         </div>
     </footer>
 
     <script src="js/codigo.js"></script>
-
 </body>
 
 </html>
