@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conferencias - UNAM</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
@@ -49,16 +51,46 @@
             <h1 class="encabezado">Conferencias Disponibles</h1>
 
             <div class="row">
+                <!-- Conferencia 1 -->
                 <div class="four columns">
                     <div class="card">
-                        <img src="/img/conferencia_vj.jpg" alt="Conferencia 1" class="imagen-conferencia u-full-width">
+                        <div id="carouselConferencia1" class="carousel slide mb-3" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/conferencia_vj.jpg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 1 - Foto 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/cvj1.jpeg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 2 - Foto 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/cvj2.jpeg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 2 - Foto 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/cvj3.jpeg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 2 - Foto 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselConferencia1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselConferencia1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
                         <div class="info-card">
                             <h4>Los Videojuegos en la Ingeniería</h4>
                             <p>Ponente: MTRO. José Francisco Salgado Rodriguez</p>
                             <div class="detalles-posteriores">
-                                <p class="descripcion">Una exploración fascinante sobre cómo el desarrollo, 
-                                    la programación avanzada y la simulación interactiva propia de los videojuegos 
-                                    se aplican para resolver problemas complejos, optimizar procesos de diseño y 
+                                <p class="descripcion">Una exploración fascinante sobre cómo el desarrollo,
+                                    la programación avanzada y la simulación interactiva propia de los videojuegos
+                                    se aplican para resolver problemas complejos, optimizar procesos de diseño y
                                     potenciar la innovación en el campo de la ingeniería moderna.</p>
                                 <p class="lugar"><strong>Lugar:</strong> Auditorio DUACyD</p>
                                 <p class="hora"><strong>Hora:</strong> 12:30 PM - 1:30 PM</p>
@@ -71,17 +103,48 @@
                     </div>
                 </div>
 
+                <!-- Conferencia 2 -->
                 <div class="four columns">
                     <div class="card">
-                        <img src="/img/conferencia_sbd.jpg" alt="Conferencia 2" class="imagen-conferencia u-full-width">
+                        <div id="carouselConferencia2" class="carousel slide mb-3" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/conferencia_sbd.jpg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 2 - Foto 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/cbd1.jpeg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 2 - Foto 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/cbd2.jpeg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 2 - Foto 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/cbd3.jpeg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 2 - Foto 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselConferencia2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselConferencia2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
                         <div class="info-card">
                             <h4>Servidores y Base de datos en la Nube: AWS Cloud, AZURE, GCP</h4>
                             <p>Ponente: Fernando Cisneros Reyes</p>
-                            <!-- Parte posterior de la conferencia: Descripción, lugar y hora -->
                             <div class="detalles-posteriores">
-                                <p class="descripcion">Una visión integral y práctica sobre la arquitectura, gestión y 
-                                    despliegue de servidores y bases de datos en los entornos de nube líderes del mercado 
-                                    (Amazon Web Services, Microsoft Azure y Google Cloud Platform), enfocada en la escalabilidad, 
+                                <p class="descripcion">Una visión integral y práctica sobre la arquitectura, gestión y
+                                    despliegue de servidores y bases de datos en los entornos de nube líderes del
+                                    mercado
+                                    (Amazon Web Services, Microsoft Azure y Google Cloud Platform), enfocada en la
+                                    escalabilidad,
                                     alta disponibilidad y seguridad de la información.</p>
                                 <p class="lugar"><strong>Lugar:</strong> Auditorio A1</p>
                                 <p class="hora"><strong>Hora:</strong> 01:00 PM - 2:30 PM</p>
@@ -94,16 +157,49 @@
                     </div>
                 </div>
 
+                <!-- Conferencia 3 -->
                 <div class="four columns">
                     <div class="card">
-                        <img src="/img/conferencia_hw.jpg" alt="Conferencia 3" class="imagen-conferencia u-full-width">
+                        <div id="carouselConferencia3" class="carousel slide mb-3" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/conferencia_hw.jpg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 3 - Foto 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/chw1.jpeg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 2 - Foto 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/chw2.jpeg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 2 - Foto 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/chw3.jpeg" class="d-block w-100 imagen-conferencia"
+                                        alt="Conferencia 2 - Foto 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselConferencia3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselConferencia3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
                         <div class="info-card">
                             <h4>Huawei - Construyendo la Infraestructura Digital para la era de la IA y el 5G</h4>
                             <p>Ponente: Ing. Juan Josè Baños</p>
                             <div class="detalles-posteriores">
-                                <p class="descripcion">Una perspectiva estratégica sobre el papel de Huawei en el despliegue de tecnologías críticas, 
-                                    explorando cómo su infraestructura avanzada impulsa la conectividad ultrarrápida del 5G y la potencia de 
-                                    procesamiento requerida para las aplicaciones de inteligencia artificial del futuro.</p>
+                                <p class="descripcion">Una perspectiva estratégica sobre el papel de Huawei en el
+                                    despliegue de tecnologías críticas,
+                                    explorando cómo su infraestructura avanzada impulsa la conectividad ultrarrápida del
+                                    5G y la potencia de
+                                    procesamiento requerida para las aplicaciones de inteligencia artificial del futuro.
+                                </p>
                                 <p class="lugar"><strong>Lugar:</strong> Auditorio DUACyD</p>
                                 <p class="hora"><strong>Hora:</strong> 12:00 PM - 1:30 PM</p>
                             </div>
@@ -143,12 +239,12 @@
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row text-center">
-                    <p><strong>Equipo #3</strong></p>
-                    <p>Camargo Ramírez Julio / Capilla Hernández Sem Andre / González Galero Hector Antonio</p>
+                <p><strong>Equipo #3</strong></p>
+                <p>Camargo Ramírez Julio / Capilla Hernández Sem Andre / González Galero Hector Antonio</p>
             </div>
         </div>
     </footer>
-
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/codigo.js"></script>
 </body>
 
